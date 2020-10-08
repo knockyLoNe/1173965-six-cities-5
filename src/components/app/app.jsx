@@ -3,17 +3,14 @@ import Main from "../main/main";
 import PropTypes from "prop-types";
 
 const App = (props) => {
-  // eslint-disable-next-line react/prop-types
+
   return (
-    <>
-    <h1>hello world</h1>
-    <Main />
-    </>
-    )
+    <Main rentalOffersCount={props.rentalOffersCount}/>
+  );
 };
 
 App.propTypes = {
-  errorsCount: PropTypes.number.isRequired,
+  rentalOffersCount: PropTypes.number.isRequired,
 };
 
 export default App;

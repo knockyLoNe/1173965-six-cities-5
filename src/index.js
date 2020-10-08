@@ -3,12 +3,12 @@ import ReactDOM from "react-dom";
 import App from "./components/app/app";
 
 const Settings = {
-  ERRORS_COUNT: 3
+  rentalOffersCount: 312,
 };
 
 ReactDOM.render(
     <App
-      errorsCount = {Settings.ERRORS_COUNT}
+      rentalOffersCount={Settings.rentalOffersCount}
     />,
     document.querySelector(`#root`)
 );
