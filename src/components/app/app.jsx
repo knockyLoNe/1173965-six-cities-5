@@ -4,8 +4,12 @@ import PropTypes from "prop-types";
 
 const App = (props) => {
   // eslint-disable-next-line react/prop-types
-
-  return <Main />;
+  return (
+    <>
+    <h1>hello world</h1>
+    <Main />
+    </>
+    )
 };
 
 App.propTypes = {
