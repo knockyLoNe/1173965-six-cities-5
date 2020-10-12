@@ -70,7 +70,7 @@ const Main = (props) => {
                   <span>Premium</span>
                 </div>
                 <div className="cities__image-wrapper place-card__image-wrapper">
-                  <Link to={"/offer/" + 1}>
+                  <Link to={`/offer/` + 1}>
                     <img className="place-card__image" src="img/apartment-01.jpg" width="260" height="200" alt="Place image" />
                   </Link>
                 </div>
@@ -102,7 +102,7 @@ const Main = (props) => {
 
               <article className="cities__place-card place-card">
                 <div className="cities__image-wrapper place-card__image-wrapper">
-                  <Link to={"/offer/" + 2}>
+                  <Link to={`/offer/` + 2}>
                     <img className="place-card__image" src="img/room.jpg" width="260" height="200" alt="Place image" />
                   </Link>
                 </div>
@@ -134,7 +134,7 @@ const Main = (props) => {
 
               <article className="cities__place-card place-card">
                 <div className="cities__image-wrapper place-card__image-wrapper">
-                  <Link to={"/offer/" + 3}>
+                  <Link to={`/offer/` + 3}>
                     <img className="place-card__image" src="img/apartment-02.jpg" width="260" height="200" alt="Place image"/>
                   </Link>
                 </div>
@@ -169,7 +169,7 @@ const Main = (props) => {
                   <span>Premium</span>
                 </div>
                 <div className="cities__image-wrapper place-card__image-wrapper">
-                  <Link to={"/offer/" + 4}>
+                  <Link to={`/offer/` + 4}>
                     <img className="place-card__image" src="img/apartment-03.jpg" width="260" height="200" alt="Place image" />
                   </Link>
                 </div>
@@ -201,7 +201,7 @@ const Main = (props) => {
 
               <article className="cities__place-card place-card">
                 <div className="cities__image-wrapper place-card__image-wrapper">
-                  <Link to={"/offer/" + 5}>
+                  <Link to={`/offer/` + 5}>
                     <img className="place-card__image" src="img/room.jpg" width="260" height="200" alt="Place image"/>
                   </Link>
                 </div>
