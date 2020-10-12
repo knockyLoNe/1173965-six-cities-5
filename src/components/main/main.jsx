@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import {Link} from "react-router-dom";
 
 const Main = (props) => {
 
@@ -69,9 +70,9 @@ const Main = (props) => {
                   <span>Premium</span>
                 </div>
                 <div className="cities__image-wrapper place-card__image-wrapper">
-                  <a href="#">
+                  <Link to={"/offer/" + 1}>
                     <img className="place-card__image" src="img/apartment-01.jpg" width="260" height="200" alt="Place image" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="place-card__info">
                   <div className="place-card__price-wrapper">
@@ -101,9 +102,9 @@ const Main = (props) => {
 
               <article className="cities__place-card place-card">
                 <div className="cities__image-wrapper place-card__image-wrapper">
-                  <a href="#">
+                  <Link to={"/offer/" + 2}>
                     <img className="place-card__image" src="img/room.jpg" width="260" height="200" alt="Place image" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="place-card__info">
                   <div className="place-card__price-wrapper">
@@ -133,9 +134,9 @@ const Main = (props) => {
 
               <article className="cities__place-card place-card">
                 <div className="cities__image-wrapper place-card__image-wrapper">
-                  <a href="#">
+                  <Link to={"/offer/" + 3}>
                     <img className="place-card__image" src="img/apartment-02.jpg" width="260" height="200" alt="Place image"/>
-                  </a>
+                  </Link>
                 </div>
                 <div className="place-card__info">
                   <div className="place-card__price-wrapper">
@@ -168,9 +169,9 @@ const Main = (props) => {
                   <span>Premium</span>
                 </div>
                 <div className="cities__image-wrapper place-card__image-wrapper">
-                  <a href="#">
+                  <Link to={"/offer/" + 4}>
                     <img className="place-card__image" src="img/apartment-03.jpg" width="260" height="200" alt="Place image" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="place-card__info">
                   <div className="place-card__price-wrapper">
@@ -200,9 +201,9 @@ const Main = (props) => {
 
               <article className="cities__place-card place-card">
                 <div className="cities__image-wrapper place-card__image-wrapper">
-                  <a href="#">
+                  <Link to={"/offer/" + 5}>
                     <img className="place-card__image" src="img/room.jpg" width="260" height="200" alt="Place image"/>
-                  </a>
+                  </Link>
                 </div>
                 <div className="place-card__info">
                   <div className="place-card__price-wrapper">
