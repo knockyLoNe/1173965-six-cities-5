@@ -13,7 +13,10 @@ const App = (props) => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
-          <Main rentalOffersCount={props.rentalOffersCount}/>
+          <Main
+            rentalOffersCount={props.rentalOffersCount}
+            offers={props.offers}
+          />
         </Route>
         <Route exact path="/login">
           <LoginScreen />
@@ -21,7 +24,7 @@ const App = (props) => {
         <Route exact path="/favorites">
           <FavoritesScreen />
         </Route>
-        <Route path="/offer/:id" exact component={PropertyScreen} />
+        <Route path="/offer" exact component={PropertyScreen} />
       </Switch>
     </BrowserRouter>
   );
@@ -29,6 +32,8 @@ const App = (props) => {
 
 App.propTypes = {
   rentalOffersCount: PropTypes.number.isRequired,
+  offers: PropTypes.object.isRequired,
+  reviews: PropTypes.object.isRequired,
 };
 
 export default App;
