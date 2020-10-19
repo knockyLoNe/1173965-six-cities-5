@@ -1,5 +1,6 @@
 import React from "react";
 import placeCardProps from "../place-card-screen/place-card.prop";
+import {Link} from "react-router-dom";
 
 
 const PlaceCardScreen = (props) => {
@@ -13,9 +14,9 @@ const PlaceCardScreen = (props) => {
             <span>Premium</span>
           </div>
           <div className="cities__image-wrapper place-card__image-wrapper">
-            <a href="#">
+            <Link to={`/offer/` + i}>
               <img className="place-card__image" src={offer.img} width="260" height="200" alt="Place image" />
-            </a>
+            </Link>
           </div>
           <div className="place-card__info">
             <div className="place-card__price-wrapper">
@@ -37,7 +38,7 @@ const PlaceCardScreen = (props) => {
               </div>
             </div>
             <h2 className="place-card__name">
-              <a href="#">Beautiful &amp; luxurious apartment at great location</a>
+              <Link to={`/offer/` + i}>Beautiful &amp; luxurious apartment at great location</Link>
             </h2>
             <p className="place-card__type">{offer.type}</p>
           </div>
