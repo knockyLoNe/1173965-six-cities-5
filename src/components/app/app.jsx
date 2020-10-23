@@ -8,12 +8,16 @@ import PropertyScreen from "../property-screen/property-screen";
 
 
 const App = (props) => {
+  const {rentalOffersCount, offers} = props;
 
   return (
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
-          <Main rentalOffersCount={props.rentalOffersCount}/>
+          <Main
+            rentalOffersCount={rentalOffersCount}
+            offers={offers}
+          />
         </Route>
         <Route exact path="/login">
           <LoginScreen />
@@ -29,6 +33,8 @@ const App = (props) => {
 
 App.propTypes = {
   rentalOffersCount: PropTypes.number.isRequired,
+  offers: PropTypes.object.isRequired,
+  reviews: PropTypes.object.isRequired,
 };
 
 export default App;
