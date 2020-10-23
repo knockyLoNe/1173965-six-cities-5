@@ -8,14 +8,15 @@ import PropertyScreen from "../property-screen/property-screen";
 
 
 const App = (props) => {
+  const {rentalOffersCount, offers} = props;
 
   return (
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
           <Main
-            rentalOffersCount={props.rentalOffersCount}
-            offers={props.offers}
+            rentalOffersCount={rentalOffersCount}
+            offers={offers}
           />
         </Route>
         <Route exact path="/login">

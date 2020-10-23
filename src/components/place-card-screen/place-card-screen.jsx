@@ -2,7 +2,6 @@ import React from "react";
 import placeCardProps from "../place-card-screen/place-card.prop";
 import {Link} from "react-router-dom";
 
-
 const PlaceCardScreen = (props) => {
   const {offers} = props;
 

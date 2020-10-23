@@ -7,6 +7,7 @@ import Comments from "../comments/comments";
 const PropertyScreen = (props) => {
   const id = props.match.params.id;
   const offer = offers[id];
+  const {ratingNumber, adultCount, room, type, price} = offer;
 
   return (
     <>
@@ -81,21 +82,21 @@ const PropertyScreen = (props) => {
                 <span style={{width: `80%`}}></span>
                 <span className="visually-hidden">Rating</span>
               </div>
-              <span className="property__rating-value rating__value">{offer.ratingNumber}</span>
+              <span className="property__rating-value rating__value">{ratingNumber}</span>
             </div>
             <ul className="property__features">
               <li className="property__feature property__feature--entire">
-                {offer.type}
+                {type}
               </li>
               <li className="property__feature property__feature--bedrooms">
-                {offer.room} Bedrooms
+                {room} Bedrooms
               </li>
               <li className="property__feature property__feature--adults">
-                Max {offer.adultCount} adults
+                Max {adultCount} adults
               </li>
             </ul>
             <div className="property__price">
-              <b className="property__price-value">&euro;{offer.price}</b>
+              <b className="property__price-value">&euro;{price}</b>
               <span className="property__price-text">&nbsp;night</span>
             </div>
             <div className="property__inside">
