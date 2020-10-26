@@ -7,6 +7,8 @@ export default [
     ratingStars: 4,
     ratingNumber: 4.8,
     img: `img/apartment-01.jpg`,
+    latitude: `52.3909553943508`,
+    longitude: `4.85309666406198`,
   }, {
     type: `Private room`,
     room: 3,
@@ -15,6 +17,8 @@ export default [
     ratingStars: 4,
     ratingNumber: 4.8,
     img: `img/room.jpg`,
+    latitude: `52.369553943508`,
+    longitude: `4.85309666406198`,
   }, {
     type: `Apartment`,
     room: 3,
@@ -23,6 +27,8 @@ export default [
     ratingStars: 4,
     ratingNumber: 4.8,
     img: `img/apartment-02.jpg`,
+    latitude: `52.3909553943508`,
+    longitude: `4.929309666406198`,
   }, {
     type: `Apartment`,
     room: 3,
@@ -31,6 +37,8 @@ export default [
     ratingStars: 5,
     ratingNumber: 5,
     img: `img/apartment-03.jpg`,
+    latitude: `52.3809553943508`,
+    longitude: `4.939309666406198`,
   }, {
     type: `Private room`,
     room: 3,
@@ -39,5 +47,9 @@ export default [
     ratingStars: 3,
     ratingNumber: 3,
     img: `img/room.jpg`,
+    latitude: `52.3909553943508`,
+    longitude: `4.85309666406198`,
   }
 ];
+
+
