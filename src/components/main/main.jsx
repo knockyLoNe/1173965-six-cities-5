@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import PlaceCardScreen from "../place-card-screen/place-card-screen";
 import placeCardProps from "../place-card-screen/place-card.prop";
+import MapScreen from "../map-screen/map-screen";
 
 const Main = (props) => {
 
@@ -68,7 +69,7 @@ const Main = (props) => {
             <PlaceCardScreen offers={props.offers} />
           </section>
           <div className="cities__right-section">
-            <section className="cities__map map"></section>
+            <MapScreen offers={props.offers} />
           </div>
         </div>
       </div>
