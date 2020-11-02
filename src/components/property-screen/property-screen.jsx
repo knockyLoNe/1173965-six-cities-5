@@ -10,7 +10,7 @@ const PropertyScreen = (props) => {
   const id = props.match.params.id;
   const offer = offers[id];
   const {ratingNumber, adultCount, room, type, price} = offer;
-  const neighbourhoods = offers.slice(0,3);
+  const neighbourhoods = offers.slice(0, 3);
 
   return (
     <>

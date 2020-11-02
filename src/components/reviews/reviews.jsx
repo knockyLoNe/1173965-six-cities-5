@@ -7,7 +7,7 @@ const Reviews = () => {
     <ul className="reviews__list">
       <SingleReview />
     </ul>
-  )
-}
+  );
+};
 
 export default Reviews;
