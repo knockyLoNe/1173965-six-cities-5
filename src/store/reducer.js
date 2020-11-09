@@ -12,7 +12,7 @@ const reducer = (state = initialState, action) => {
       const {cityId} = action.payload;
       return Object.assign({}, cityId, state);
 
-    case ActionType.GET_PROPERTYS_LIST:
+    case ActionType.GET_PROPERTIES_LIST:
       return state;
     default:
       return state;

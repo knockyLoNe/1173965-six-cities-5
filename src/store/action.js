@@ -1,6 +1,6 @@
 export const ActionType = {
   CITY_CHANGE: `CITY_CHANGE`,
-  GET_PROPERTYS_LIST: `GET_PROPERTYS_LIST`,
+  GET_PROPERTIES_LIST: `GET_PROPERTIES_LIST`,
 };
 
 export const ActionCreator = {
@@ -10,7 +10,7 @@ export const ActionCreator = {
   }),
 
   getPropertysList: (payload) => ({
-    type: ActionType.GET_PROPERTYS_LIST,
+    type: ActionType.GET_PROPERTIES_LIST,
     payload,
   })
 };
